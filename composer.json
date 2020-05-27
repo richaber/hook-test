@@ -1,0 +1,42 @@
+{
+  "name": "richaber/hook-test",
+  "description": "This is a description.",
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "authors": [
+    {
+      "name": "richaber",
+      "email": "email@example.com"
+    }
+  ],
+  "type": "wordpress-plugin",
+  "autoload": {
+	"psr-4": {
+	  "RichAber\\HookTest\\": "src/"
+	}
+  },
+  "require": {
+	"composer/installers": "~1.0"
+  },
+  "require-dev": {
+	"dealerdirect/phpcodesniffer-composer-installer": "^0.5.0",
+	"phpcompatibility/phpcompatibility-wp": "^2.0.0",
+	"squizlabs/php_codesniffer": "^3.3.1",
+	"webdevstudios/php-coding-standards": "^1.0.0",
+	"wp-coding-standards/wpcs": "^2.1.0"
+  },
+  "extra": {
+	"installer-name": "hook-test",
+	"phpcodesniffer-search-depth": 5
+  },
+  "scripts": {
+	"install-codestandards": "Dealerdirect\\Composer\\Plugin\\Installers\\PHPCodeSniffer\\Plugin::run",
+	"lint": "@php ./vendor/squizlabs/php_codesniffer/bin/phpcs --standard=phpcs.xml.dist --report=summary,source",
+	"post-install-cmd": [
+	  "@install-codestandards"
+	],
+	"post-update-cmd": [
+	  "@install-codestandards"
+	]
+  }
+}
