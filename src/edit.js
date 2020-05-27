@@ -18,7 +18,7 @@ import { __ } from '@wordpress/i18n';
 export default function Edit( { className } ) {
 	return (
 		<p className={ className }>
-			{ __( 'Hook Test – hello from the editor!', 'create-block' ) }
+			{ __( 'Hook Test – hello from the editor!', 'hook-test' ) }
 		</p>
 	);
 }

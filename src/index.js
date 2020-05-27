@@ -28,7 +28,7 @@ registerBlockType( 'create-block/hook-test', {
 	 * This is the display title for your block, which can be translated with `i18n` functions.
 	 * The block inserter will show this name.
 	 */
-	title: __( 'Hook Test', 'create-block' ),
+	title: __( 'Hook Test', 'hook-test' ),
 
 	/**
 	 * This is a short description for your block, can be translated with `i18n` functions.
@@ -36,7 +36,7 @@ registerBlockType( 'create-block/hook-test', {
 	 */
 	description: __(
 		'Example block written with ESNext standard and JSX support – build step required.',
-		'create-block'
+		'hook-test'
 	),
 
 	/**

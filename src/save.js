@@ -17,10 +17,7 @@ import { __ } from '@wordpress/i18n';
 export default function save() {
 	return (
 		<p>
-			{ __(
-				'Hook Test – hello from the saved content!',
-				'create-block'
-			) }
+			{ __( 'Hook Test – hello from the saved content!', 'hook-test' ) }
 		</p>
 	);
 }
