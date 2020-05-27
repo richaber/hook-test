@@ -17,7 +17,7 @@
 	},
 	"dependencies": {},
 	"devDependencies": {
-		"@wordpress/eslint-plugin": "^2.3.0",
+		"@wordpress/eslint-plugin": "^6.0.0",
 		"@wordpress/prettier-config": "^0.2.0",
 		"@wordpress/scripts": "^9.1.0",
 		"eslint": "^6.0.1",
@@ -26,28 +26,6 @@
 		"prettier": "npm:wp-prettier@^1.19.1",
 		"stylelint": "^10.0.1",
 		"stylelint-config-wordpress": "^14.0.0"
-	},
-	"eslintConfig": {
-		"extends": "plugin:@wordpress/eslint-plugin/recommended",
-		"root": true,
-		"env": {
-			"browser": true,
-			"node": true,
-			"es6": true
-		},
-		"globals": {
-			"jQuery": "readonly",
-			"wp": "readonly"
-		},
-		"ignorePatterns": [
-			"**/build/*",
-			"**/node_modules/*",
-			"**/vendor/*",
-			"**/tests/*"
-		],
-		"rules": {
-			"@wordpress/dependency-group": "off"
-		}
 	},
 	"prettier": "@wordpress/prettier-config",
 	"stylelint": {
